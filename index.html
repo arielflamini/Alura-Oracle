@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="contenedor">
+        <input class="texto_secreto" placeholder="ingrese el texto aquí">
+        <img id="logo" src="img/Logo.png"> 
+        <div class="cuadro_mensaje">
+            <textarea class="mensaje_encriptado">
+            </textarea>
+            <button id="boton_copiar" onclick="copiar_texto()">
+                <p>Copiar</p>
+            </button>     
+        </div>     
+        <h6 class="informacion"><img src="img/Vector.png">Solo letras minúsculas y sin acentos</h6>
+        <nav class="botones">
+            <button id="boton_encriptar" onclick="encriptar()">
+                <p>Encriptar</p>
+            </button>
+            <button id="boton_desencriptar" onclick="desencriptar()">
+                <p>Desencriptar</p>
+            </button>
+        </nav>
+    </div>
+    <script 
+    src="script.js">
+        document.getElementById("mensaje_encriptado").style.display = "hidden";
+    </script>
+</body>
+</html>
